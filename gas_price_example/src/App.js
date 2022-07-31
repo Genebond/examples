@@ -15,13 +15,13 @@ export default function App() {
   //storing state of the application - fetching information or not
   const [loading, setLoading] = useState(false);
 
-  const host = "https://qaapius01.fluidefi.io/"
+  const host = "https://analytics.fluidefi.com/" //please use your custom URL if you have one
 
   //url for the gas_price endpoint
   const url = host + "gas_price/";
 
   //jwt token recieved from authorization endpoint
-  const token = "ac7e1c4a7665afa9b01c0f0b8a0a38f6bbb85573";
+  const token = "{{token}}";
 
   //implement error handling and update UI accordingly
   const errorHandle = (e) => { };
@@ -36,8 +36,6 @@ export default function App() {
   }, []);
 
   async function getGasAPICall() {
-
-    console.log("calling api");
 
     setLoading(true);
 
@@ -59,7 +57,6 @@ export default function App() {
     try {
       res = await axios.post(url, data, config);
     } catch (e) {
-      console.log(e);
       //error handling
       errorHandle(e);
     }
