@@ -13,8 +13,9 @@ You are required to obtain and store your own authentication token using your pr
 #### **description**
 Get average gas prices from the latest block for EIP-1559 or legacy evm networks.
 
-Check out the [API DOCUMENTATION](https://analytics.fluidefi.com/api/docs/#post-/gas_price/) for more information.
+Check out the [Fluidefi API Documentation](https://analytics.fluidefi.com/api/docs/#post-/gas_price/) for more information.
 
-**screenshots**
+#### **screenshot**
+![alt text](https://github.com/fluidefi/examples/blob/main/screenshots/gas_price_screenshot.png?raw=true)
 
 
