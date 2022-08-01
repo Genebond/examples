@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState, useRef } from 'react';
 import axios from "axios";
@@ -53,6 +52,7 @@ function App() {
 
       console.log(res);
 
+      //successfuly retrieved data, setting amount_in variable to display in the frontend
       setInputAmount(res.data.amount_in);
 
       setLoading(false);
