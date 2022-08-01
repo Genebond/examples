@@ -70,21 +70,21 @@ function App() {
       <h1>Amount In</h1>
       <p>Get a quote for a given output amount and swap path from a uniswapv2-compatible router</p>
       <form onSubmit={handleSubmit}>
-        <label for="network">network: </label>
+        <label htmlFor="network">network: </label>
         <select id="network" name="network">
           <option value="bnb">bnb</option>
           <option value="mainnet">mainnet</option>
           <option value="ropsten">ropsten</option>
         </select>
         <br />
-        <label for="platform">platform: </label>
+        <label htmlFor="platform">platform: </label>
         <select id="platform" name="platform">
           <option value="pancakeswap">pancakeswap</option>
           <option value="uniswapv2">uniswapv2</option>
           <option value="sushiswap">sushiswap</option>
         </select>
         <br />
-        <label for="input_token">input token: </label>
+        <label htmlFor="input_token">input token: </label>
         <select id="input_token" name="input_token" ref={inputTokenRef}>
           <option value="0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d">BNB USDC</option>
           <option value="0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">USDC</option>
@@ -92,7 +92,7 @@ function App() {
           <option value="0x4Fabb145d64652a948d72533023f6E7A623C7C53">BUSD</option>
         </select>
         <br />
-        <label for="output_token">output token: </label>
+        <label htmlFor="output_token">output token: </label>
         <select id="output_token" name="output_token">
           <option value="0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">USDC</option>
           <option value="0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c">WBNB</option>
@@ -100,7 +100,7 @@ function App() {
           <option value="0x4Fabb145d64652a948d72533023f6E7A623C7C53">BUSD</option>
         </select>
         <br />
-        <label for="amount_out">amount out: </label>
+        <label htmlFor="amount_out">amount out: </label>
         {/* giving a default value for demonstration purposes  */}
         <input id='amount_out' name='amount_out' placeholder='Enter the desired amount out after swap' defaultValue={100000000000000000000} />
         <br></br>
@@ -108,7 +108,7 @@ function App() {
 
       </form>
 
-      <p>estimated amount required to recieve the desired output amount: <b>{inputAmount}</b> {inputTokenRef.current.options[inputTokenRef.current.selectedIndex].text}</p>
+      <p>estimated amount required to recieve the desired output amount: <b>{inputAmount}</b> {inputTokenRef.current?.options[inputTokenRef.current.selectedIndex].text}</p>
     </div>
   );
 }
