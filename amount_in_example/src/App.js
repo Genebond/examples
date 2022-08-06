@@ -72,22 +72,19 @@ function App() {
       <form onSubmit={handleSubmit}>
         <label htmlFor="network">network: </label>
         <select id="network" name="network">
-          <option value="bnb">bnb</option>
           <option value="mainnet">mainnet</option>
           <option value="ropsten">ropsten</option>
         </select>
         <br />
         <label htmlFor="platform">platform: </label>
         <select id="platform" name="platform">
-          <option value="pancakeswap">pancakeswap</option>
           <option value="uniswapv2">uniswapv2</option>
           <option value="sushiswap">sushiswap</option>
         </select>
         <br />
         <label htmlFor="input_token">input token: </label>
         <select id="input_token" name="input_token" ref={inputTokenRef}>
-          <option value="0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d">BNB USDC</option>
-          <option value="0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">USDC</option>
+          <option value="0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48">USDC</option>
           <option value="0xdAC17F958D2ee523a2206206994597C13D831ec7">USDT</option>
           <option value="0x4Fabb145d64652a948d72533023f6E7A623C7C53">BUSD</option>
         </select>
@@ -95,8 +92,7 @@ function App() {
         <label htmlFor="output_token">output token: </label>
         <select id="output_token" name="output_token">
           <option value="0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48">USDC</option>
-          <option value="0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c">WBNB</option>
-          <option value="0xdac17f958d2ee523a2206206994597c13d831ec7">USDT</option>
+          <option value="0xdAC17F958D2ee523a2206206994597C13D831ec7">USDT</option>
           <option value="0x4Fabb145d64652a948d72533023f6E7A623C7C53">BUSD</option>
         </select>
         <br />
