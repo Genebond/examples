@@ -8,13 +8,13 @@ function App() {
   //storing state of the application - fetching information or not
   const [loading, setLoading] = useState(false);
 
-  const host = "https://qaapius01.fluidefi.io/" //please use your custom URL if you have one
+  const host = "https://analytics.fluidefi.com/" //please use your custom URL if you have one
 
   //url for the gas_price endpoint
   const url = host + "get_amount_in/";
 
   //jwt token recieved from authorization endpoint
-  const token = "2a270d2717e9ef7c11c753a9407854525659ca24";
+  const token = "{{token}}";
 
   const inputTokenRef = useRef(null)
 
