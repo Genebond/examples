@@ -28,3 +28,13 @@ Check out the [Fluidefi API Documentation](https://analytics.fluidefi.com/api/do
 #### **screenshot**
 ![screenshot of the amount in example app](https://github.com/fluidefi/examples/blob/main/screenshots/get_amount_in_screenshot.png?raw=true)
 
+### `get_amount_out`
+
+#### **description**
+Get a quote for a given input amount and swap path from a uniswapv2-compatible router
+
+Check out the [Fluidefi API Documentation](https://analytics.fluidefi.com/api/docs/#post-/get_amount_out/) for more information.
+
+#### **screenshot**
+![screenshot of the amount in example app](https://github.com/fluidefi/examples/blob/main/screenshots/get_amount_out_screenshot.png?raw=true)
+
